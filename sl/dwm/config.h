@@ -12,8 +12,12 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Cousine:size=12", "Symbols Nerd Font:size=14" };
-static const char dmenufont[]       = "Cousine:size=14";
+static const char *fonts[] = {
+  "JetBrains Mono:size=12:antialias=true:autohint=false",
+  "Symbols Nerd Font Mono:size=12:antialias=true:autohint=false",
+  "Noto Color Emoji:size=12:antialias=true:autohint=true"
+};
+static const char dmenufont[] = "JetBrains Mono:size=12";
 #define ICONSIZE 16   /* icon size */
 #define ICONSPACING 5 /* space between icon and title */
 
@@ -171,7 +175,7 @@ static const Button buttons[] = {
 };
 
 static const char *const autostart[] = {
-	"feh", "--bg-scale", "~/dotfiles/dev/data/tetris.png", NULL,
+	"feh", "--bg-scale", "~/wallpaper.png", NULL,
 	"slstatus", NULL,
 	NULL /* terminate */
 };
