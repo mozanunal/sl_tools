@@ -43,6 +43,7 @@ install_st:
 		&& patch -i st-w3m-0.8.3.diff \
 		&& patch -i st-scrollback-0.8.5.diff \
 		&& patch -i st-desktopentry-0.8.5.diff \
+		&& patch -i st-glyph-wide-support-20220411-ef05519.diff \
 		&& sudo make clean install
 
 install_dmenu:
